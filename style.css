@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+body{
+	width: 1440px;
+	
+}
+
+body:hover::after{
+	content: '';
+	width:1440px;
+	height:2472px;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1000;
+	background-image: url(images/scopeGrid.png);
+	background-repeat: repeat;
+}
+
+/*----------------------------------------*/
+/*---------------- header ----------------*/
+/*----------------------------------------*/
+.index-header{
+	margin-bottom: 24px;
+	background: #8b562c;
+}
+
+.index-header .logo, .index-header nav{
+	float:left;
+}
+.social-link{
+	float:right;
+}
+
+.index-header .logo{
+	display:inline-block;
+	width: 180px;
+	height: 120px;
+	background: #3f2611;
+} 
+
+
+.index-header nav li{
+	float:left;
+	margin-left: 96px;
+	line-height: 120px;
+}
+
+.social-link{
+	width: 360px;
+	height : 120px;
+	background: #a56f34;
+}
+
+
+/*--------------------------------------*/
+/*---------------- main ----------------*/
+/*--------------------------------------*/
+main{
+	margin-bottom: 96px;
+}
+
+main .main-title{
+	margin-bottom: 120px;
+}
+
+.main-title h1{
+	float:left;
+	width: 190px;
+	height: 72px;
+	margin-left: 530px;
+	background: #3f2611;
+}
+
+.main-title h2{
+	float:left;
+	height: 48px;
+	width: 315px;
+	margin-top: 24px;
+	margin-left: 45px;
+	background: #8b562c;
+}
+
+main article{
+	margin-bottom: 72px;
+}
+
+main article figcaption{
+	width:450px;
+	height:184px;
+	
+}
+main article:nth-child(2n) img{
+	float:left;
+	margin-left: 130px; 
+}
+main article:nth-child(2n) figcaption{
+	float:left;
+	margin-left: 100px; 
+}
+
+main article:nth-child(2n+1) img{
+	float:right;
+	margin-right: 130px;
+	
+}
+main article:nth-child(2n+1) figcaption{
+	float:right;
+	margin-right: 90px; 
+}
+
+/*----------------------------------------*/
+/*---------------- footer ----------------*/
+/*----------------------------------------*/
+.footer{
+	background: #3f2611;
+}
+.footer ul li{
+	float:left;
+	width: 360px;
+	height: 288px;
+	background-color: lightgreen;
+}
+
+.footer ul li:not(.company){
+	margin-left: 90px;
+}
+
+.footer .company{
+	margin-right: 90px;
+}
+
+.footer .contact{
+	width:180px;
+}
+
+.footer .follow{
+	width: 180px;
+}
